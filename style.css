@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#game-area {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#panda {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Emoji_u2764.svg/1200px-Emoji_u2764.svg.png'); /* Imagen del corazón */
+    background-size: cover;
+    animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -30px;
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+#message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 24px;
+    color: #ff69b4;
+    display: none;
+}
