@@ -59,3 +59,4 @@ function createHeart() {
 
 panda.addEventListener('click', changeImageTemporarily);
 movePanda();
+huc
