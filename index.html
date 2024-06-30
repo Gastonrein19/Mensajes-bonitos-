@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Gastón Ortíz</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Números y Nombres Aleatorios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+        <button onclick="showOption('numbers')">Ingresar Números</button>
+        <button onclick="showOption('names')">Ingresar Nombres</button>
+    </div>
+    <div id="input-area" class="hidden">
+        <div id="number-section" class="hidden">
+            <h2>Ingresar Números</h2>
+            <div id="number-inputs"></div>
+            <button onclick="addNumberInput()">Agregar Número</button>
+        </div>
+        <div id="name-section" class="hidden">
+            <h2>Ingresar Nombres</h2>
+            <div id="name-inputs"></div>
+            <button onclick="addNameInput()">Agregar Nombre</button>
+        </div>
+        <button id="shuffle-button" onclick="shuffleAndDisplay()">Lanzar Aleatorio</button>
+        <button id="reset-button" onclick="resetGame()">Reiniciar</button>
+    </div>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
