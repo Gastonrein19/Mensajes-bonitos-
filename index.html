@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mensaje del panda modificación 1</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Panda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="selector">
+        <h2>Elige el panda que rebota:</h2>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('dropdown-content-1')">Selecciona un Panda</button>
+            <div class="dropdown-content" id="dropdown-content-1">
+                <button onclick="selectPanda('panda-mimoso', this)">Panda Mimoso</button>
+                <button onclick="selectPanda('panda-esconde', this)">Panda que se Esconde</button>
+                <button onclick="selectPanda('panda-golpea', this)">Panda que Golpea la Pantalla</button>
+                <button onclick="selectPanda('panda-corriendo', this)">Panda Corriendo</button>
+                <button onclick="selectPanda('panda-corazon', this)">Panda con Corazón</button>
+            </div>
+        </div>
+        
+        <h2>Elige el panda que aparece al hacer click:</h2>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown('dropdown-content-2')">Selecciona un Panda</button>
+            <div class="dropdown-content" id="dropdown-content-2">
+                <button onclick="selectTempPanda('panda-mimoso', this)">Panda Mimoso</button>
+                <button onclick="selectTempPanda('panda-esconde', this)">Panda que se Esconde</button>
+                <button onclick="selectTempPanda('panda-golpea', this)">Panda que Golpea la Pantalla</button>
+                <button onclick="selectTempPanda('panda-corriendo', this)">Panda Corriendo</button>
+                <button onclick="selectTempPanda('panda-corazon', this)">Panda con Corazón</button>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="startGame()">Iniciar</button>
+    </div>
+    <div id="game-area" style="display: none;">
+        <img id="panda" src="https://media.tenor.com/KDqnVi_7tZoAAAAi/panda-love.gif" alt="Panda Love">
+        <div id="message">TE QUIERO MUCHO 💕</div>
+        <button class="btn" id="back-btn" onclick="backToStart()">Volver al Inicio</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
